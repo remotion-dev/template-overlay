@@ -1,5 +1,3 @@
-import {useCallback} from 'react';
-import React, {useMemo} from 'react';
 import {
 	AbsoluteFill,
 	interpolate,
@@ -7,9 +5,19 @@ import {
 	useCurrentFrame,
 	useVideoConfig,
 } from 'remotion';
+import {useCallback} from 'react';
+import React, {useMemo} from 'react';
 import {loadFont} from '@remotion/google-fonts/OpenSans';
 
 const {fontFamily} = loadFont();
+const backgroundStyle: React.CSSProperties = {
+	background: ` linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%),
+	linear-gradient(135deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%),
+	linear-gradient(45deg, transparent 75%, rgba(0, 0, 0, 0.1) 75%),
+	linear-gradient(135deg, transparent 75%, rgba(0, 0, 0, 0.1) 75%), white`,
+	backgroundSize: '49px 49px',
+	backgroundPosition: '0 0, 24.5px 0, 24.5px -24.5px, 0px 24.5px',
+};
 
 const title: React.CSSProperties = {
 	fontFamily,
@@ -25,7 +33,7 @@ const text: React.CSSProperties = {
 	color: '#4290F5',
 };
 
-export const UpperThird: React.FC = () => {
+export const Overlay: React.FC = () => {
 	const frame = useCurrentFrame();
 	const {fps, durationInFrames} = useVideoConfig();
 
@@ -66,7 +74,7 @@ export const UpperThird: React.FC = () => {
 		};
 	}, [entry, outY, rotate]);
 	return (
-		<AbsoluteFill>
+		<AbsoluteFill style={backgroundStyle}>
 			<div style={container}>
 				<div style={title}>Look</div>
 				<div style={text}>I'm an overlay!</div>

@@ -1,12 +1,12 @@
 import {Composition} from 'remotion';
-import {UpperThird} from './UpperThird';
+import {Overlay} from './Overlay';
 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
 			<Composition
 				id="Overlay"
-				component={UpperThird}
+				component={Overlay}
 				durationInFrames={75}
 				fps={30}
 				width={1920}
