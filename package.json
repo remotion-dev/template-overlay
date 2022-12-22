@@ -1,27 +1,29 @@
 {
-  "name": "davinci-overlay",
-  "version": "1.0.0",
-  "description": "My Remotion video",
-  "scripts": {
-    "start": "remotion preview",
-    "build": "remotion render MyComp out/video.mp4",
-    "upgrade": "remotion upgrade",
-    "test": "eslint src --ext ts,tsx,js,jsx && tsc"
-  },
-  "repository": {},
-  "license": "UNLICENSED",
-  "devDependencies": {
-    "@remotion/eslint-config": "^3.0.0",
-    "@types/react": "^18.0.6",
-    "@types/web": "^0.0.61",
-    "eslint": "^8.14.0",
-    "prettier": "^2.6.2",
-    "typescript": "4.6.3"
-  },
-  "dependencies": {
-    "@remotion/cli": "3.3.16",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "remotion": "3.3.16"
-  }
+	"name": "davinci-overlay",
+	"version": "1.0.0",
+	"description": "My Remotion video",
+	"scripts": {
+		"start": "remotion preview",
+		"build": "remotion render MyComp out/video.mp4",
+		"upgrade": "remotion upgrade",
+		"test": "eslint src --ext ts,tsx,js,jsx && tsc",
+		"render-transparent": "remotion render --image-format=png --pixel-format=yuva444p10le --codec=prores --prores-profile=4444"
+	},
+	"repository": {},
+	"license": "UNLICENSED",
+	"devDependencies": {
+		"@remotion/eslint-config": "^3.0.0",
+		"@types/react": "^18.0.6",
+		"@types/web": "^0.0.61",
+		"eslint": "^8.14.0",
+		"prettier": "^2.6.2",
+		"typescript": "4.6.3"
+	},
+	"dependencies": {
+		"@remotion/cli": "3.3.16",
+		"@remotion/google-fonts": "^3.3.16",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
+		"remotion": "3.3.16"
+	}
 }
