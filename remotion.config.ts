@@ -1,7 +1,7 @@
 import {Config} from 'remotion';
 
-Config.Rendering.setImageFormat('png');
-Config.Output.setPixelFormat('yuva444p10le');
-Config.Output.setCodec('prores');
-Config.Output.setProResProfile('4444');
-Config.Rendering.setMuted(true);
+Config.setImageFormat('png');
+Config.setPixelFormat('yuva444p10le');
+Config.setCodec('prores');
+Config.setProResProfile('4444');
+Config.setMuted(true);
