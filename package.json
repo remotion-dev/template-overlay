@@ -11,7 +11,7 @@
 	"repository": {},
 	"license": "UNLICENSED",
 	"devDependencies": {
-		"@remotion/eslint-config": "^3.0.0",
+		"@remotion/eslint-config": "^3.3.39",
 		"@types/react": "^18.0.26",
 		"@types/web": "^0.0.86",
 		"eslint": "^8.30.0",
@@ -19,10 +19,10 @@
 		"typescript": "^4.9.4"
 	},
 	"dependencies": {
-		"@remotion/cli": "3.3.16",
-		"@remotion/google-fonts": "3.3.16",
+		"@remotion/cli": "^3.3.39",
+		"@remotion/google-fonts": "^3.3.39",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"remotion": "3.3.16"
+		"remotion": "^3.3.39"
 	}
 }
