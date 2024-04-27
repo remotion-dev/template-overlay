@@ -1,28 +1,28 @@
 {
-	"name": "remotion-overlay",
-	"version": "1.0.0",
-	"description": "My Remotion video",
-	"scripts": {
-		"start": "remotion studio",
-		"build": "remotion render",
-		"upgrade": "remotion upgrade",
-		"test": "eslint src --ext ts,tsx,js,jsx && tsc"
-	},
-	"repository": {},
-	"license": "UNLICENSED",
-	"devDependencies": {
-		"@remotion/eslint-config": "^4.0.0",
-		"@types/react": "^18.0.26",
-		"@types/web": "^0.0.86",
-		"eslint": "^8.43.0",
-		"prettier": "^2.8.8",
-		"typescript": "^4.9.4"
-	},
-	"dependencies": {
-		"@remotion/cli": "^4.0.0",
-		"@remotion/google-fonts": "^4.0.0",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"remotion": "^4.0.0"
-	}
+  "name": "remotion-overlay",
+  "version": "1.0.0",
+  "description": "My Remotion video",
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion render",
+    "upgrade": "remotion upgrade",
+    "test": "eslint src --ext ts,tsx,js,jsx && tsc"
+  },
+  "repository": {},
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@remotion/eslint-config": "^4.0.0",
+    "@types/react": "^18.0.26",
+    "@types/web": "^0.0.143",
+    "eslint": "^8.43.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "@remotion/google-fonts": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remotion": "^4.0.0"
+  }
 }
