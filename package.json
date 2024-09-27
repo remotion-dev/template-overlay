@@ -1,5 +1,5 @@
 {
-  "name": "remotion-overlay",
+  "name": "template-overlay",
   "version": "1.0.0",
   "description": "My Remotion video",
   "scripts": {
@@ -12,17 +12,18 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "@remotion/eslint-config": "^4.0.0",
-    "@types/react": "^18.0.26",
-    "@types/web": "^0.0.143",
-    "eslint": "^8.43.0",
-    "prettier": "^3.2.5",
-    "typescript": "^5.4.5"
+    "@types/react": "18.3.1",
+    "@types/web": "0.0.78",
+    "eslint": "8.56.0",
+    "prettier": "3.2.5",
+    "typescript": "5.3.3"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.0",
     "@remotion/google-fonts": "^4.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "remotion": "^4.0.0"
-  }
+  },
+  "private": true
 }
